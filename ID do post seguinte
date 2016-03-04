@@ -1,0 +1,12 @@
+<?php
+try {
+	$sql = "SHOW TABLE STATUS LIKE 'tb_mark' ";
+	$stmt = $conexao->prepare($sql);
+	$stmt->execute();
+	$resultado = $stmt->fetch();
+	$proximoID = $resultado['Auto_increment'];
+} catch (Exception $ex) {
+	echo $ex->getMessage();
+}
+
+echo "ID:".$proximoID."";
