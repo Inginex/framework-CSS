@@ -9,4 +9,5 @@ try {
 	echo $ex->getMessage();
 }
 
-echo "ID:".$proximoID."";
+echo "ID do Post:".$proximoID."";
+
