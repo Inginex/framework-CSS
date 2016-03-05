@@ -9,5 +9,5 @@ try {
 	echo $ex->getMessage();
 }
 
-echo "ID da proxima Postagem:".$proximoID."";
+echo "ID da prox Postagem:".$proximoID."";
 
